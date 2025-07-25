@@ -1,0 +1,43 @@
+AI Coding Assistant Capabilities
+===============================
+
+As your AI coding assistant, I can help you with the following tasks in your quant project:
+
+1. **Code Understanding & Documentation**
+   - Explain code, functions, and logic in your Python scripts and Jupyter notebooks.
+   - Summarize or document code for better readability and maintainability.
+
+2. **Code Editing & Refactoring**
+   - Add, modify, or refactor code to improve performance, readability, or structure.
+   - Rename variables, functions, or files systematically across the project.
+
+3. **Feature Implementation**
+   - Implement new features or strategies (e.g., trading strategies, data analysis routines).
+   - Integrate new libraries or tools as needed.
+
+4. **Debugging & Error Fixing**
+   - Identify and fix bugs or errors in your code.
+   - Suggest solutions for common coding issues.
+
+5. **Data Handling**
+   - Assist with reading, cleaning, and processing data (CSV, DataFrame, etc.).
+   - Help with data visualization and analysis.
+
+6. **Backtesting & Analysis**
+   - Guide you in setting up and running backtests for trading strategies.
+   - Help interpret and visualize backtest results.
+
+7. **Automation & Scripting**
+   - Automate repetitive tasks or workflows.
+   - Write scripts for data import/export, batch processing, etc.
+
+8. **Environment & Dependency Management**
+   - Assist with setting up Python environments, installing packages, and managing dependencies.
+
+9. **General Coding Q&A**
+   - Answer questions about Python, libraries (pandas, numpy, matplotlib, backtrader, etc.), and best practices.
+
+10. **Task Planning & Organization**
+    - Help break down complex tasks into actionable steps and track progress.
+
+Feel free to ask for help with any coding, data, or analysis task in your quant project! 
