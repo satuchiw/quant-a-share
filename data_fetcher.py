@@ -76,7 +76,7 @@ class DataFetcher:
             df = pd.DataFrame(data_list, columns=rs.fields)
             return df
     
-    def save_data(self, df, stock_code, start_date, end_date, output_dir="."):
+    def save_data(self, df, stock_code, start_date, end_date, output_dir="data"):
         """
         Save data to CSV file
         
@@ -105,7 +105,7 @@ class DataFetcher:
         
         return filepath
     
-    def fetch_and_save(self, stock_code, start_date, end_date, frequency="d", adjustflag="2", output_dir="."):
+    def fetch_and_save(self, stock_code, start_date, end_date, frequency="d", adjustflag="2", output_dir="data"):
         """
         Fetch data and save to CSV in one operation
         

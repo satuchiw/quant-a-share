@@ -19,9 +19,18 @@ quant-a-share/
 ├── strategies.py            # Trading strategy implementations
 ├── data_fetcher.py          # Data fetching and processing
 ├── performance_analyzer.py  # Performance analysis tools
-├── config_*.json           # Strategy configuration files
-├── *.csv                   # Stock data files
-└── README.md              # This file
+├── data/                    # Data files directory
+│   ├── *.csv               # Stock data files
+│   └── *.xlsx              # Excel output files
+├── configs/                 # Configuration files directory
+│   ├── config.json         # Default MA strategy config
+│   ├── config_rsi.json     # RSI strategy config
+│   └── config_bollinger.json # Bollinger Bands config
+├── tests/                   # Test files directory
+│   ├── test_backtest.py    # Backtesting tests
+│   ├── test_performance.py # Performance tests
+│   └── test_*.py           # Other test files
+└── README.md               # This file
 ```
 
 ## 🛠️ Installation
@@ -63,7 +72,7 @@ quant-a-share/
 
 ### Basic Backtesting
 ```bash
-python backtest.py config_rsi.json
+python backtest.py configs/config_rsi.json
 ```
 
 ### Custom Configuration
@@ -133,17 +142,17 @@ class MyStrategy(bt.Strategy):
 
 ## 📝 Configuration Files
 
-- `config.json`: Default MA strategy configuration
-- `config_rsi.json`: RSI strategy configuration
-- `config_bollinger.json`: Bollinger Bands strategy configuration
+- `configs/config.json`: Default MA strategy configuration
+- `configs/config_rsi.json`: RSI strategy configuration
+- `configs/config_bollinger.json`: Bollinger Bands strategy configuration
 
 ## 🧪 Testing
 
 Run the test suite:
 ```bash
-python test_backtest.py
-python test_performance.py
-python test_portfolio_tracking.py
+python tests/test_backtest.py
+python tests/test_performance.py
+python tests/test_portfolio_tracking.py
 ```
 
 ## 📊 Sample Results

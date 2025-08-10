@@ -72,7 +72,7 @@ class BacktestEngine:
         }
         return metrics, cerebro, results
 
-def load_config(config_file="config.json"):
+def load_config(config_file="configs/config.json"):
     """
     Load configuration from JSON file
     
@@ -116,8 +116,8 @@ def main():
     """
     import sys
     
-    # Get config file from command line argument, default to config.json
-    config_file = "config.json"
+    # Get config file from command line argument, default to configs/config.json
+    config_file = "configs/config.json"
     if len(sys.argv) > 1:
         config_file = sys.argv[1]
     
@@ -154,9 +154,10 @@ def main():
     expected_csv = f"{code_short}_{start_date}_{end_date}.csv"
     
     # Check if data file exists, if not download it
-    if os.path.exists(expected_csv):
-        print(f"[INFO] Using existing data file: {expected_csv}")
-        df = fetcher.load_data_from_csv(expected_csv)
+    data_file_path = os.path.join("data", expected_csv)
+    if os.path.exists(data_file_path):
+        print(f"[INFO] Using existing data file: {data_file_path}")
+        df = fetcher.load_data_from_csv(data_file_path)
     else:
         print(f"[INFO] Data file not found. Downloading data for {stock_code}...")
         csv_path = fetcher.fetch_and_save(
