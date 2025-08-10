@@ -1,0 +1,13 @@
+{
+    "stock_code": "sh.600600",
+    "start_date": "2020-04-01",
+    "end_date": "2021-04-01",
+    "strategy": "BollingerBandsStrategy",
+    "initial_cash": 100000,
+    "strategy_params": {
+        "bb_period": 20,
+        "bb_dev": 2
+    },
+    "data_frequency": "d",
+    "adjustflag": "2"
+} 
